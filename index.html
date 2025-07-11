@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ML Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-theme">
+  <header>
+    <h1>💡 ML Project Dashboard</h1>
+    <p>Your machine learning demos in one place</p>
+    <button id="themeToggle">🌙 Toggle Theme</button>
+  </header>
+
+  <main class="cards-container">
+    <div class="card">
+      <img src="assets/house.png" alt="House Model" />
+      <h2>House Price Predictor</h2>
+      <p>Estimate the market price of a house based on features.</p>
+      <p class="stats" id="houseStats">Predictions: 0</p>
+      <a href="https://house-price-prediction-frommegha.streamlit.app/" target="_blank" class="btn">Launch App</a>
+    </div>
+
+    <div class="card">
+      <img src="assets/car.png" alt="Car Model" />
+      <h2>Car Price Estimator</h2>
+      <p>Predict the resale value of used cars using key inputs.</p>
+      <p class="stats" id="carStats">Predictions: 0</p>
+      <a href="https://car-price-prediction-frommegha.streamlit.app/" target="_blank" class="btn">Launch App</a>
+    </div>
+
+    <div class="card">
+      <img src="assets/loan.png" alt="Loan Model" />
+      <h2>Loan Eligibility Checker</h2>
+      <p>Find out if you're eligible for a loan based on profile data.</p>
+      <p class="stats" id="loanStats">Predictions: 0</p>
+      <a href="https://loan-eligibility-frommegha.streamlit.app/" target="_blank" class="btn">Launch App</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>All rights reserverd MEGHAVARDHAN</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+/* style.css */
+
+body.light-theme {
+  --bg-color: #f4f4f4;
+  --card-color: #ffffff;
+  --text-color: #000000;
+  --accent-color: #ff4c4c;
+  --hover-color: #e63946;
+  --glow: 0 0 8px rgba(255, 76, 76, 0.5);
+}
+
+body.light-theme header h1 {
+  color: var(--accent-color);
+  text-shadow: none;
+}
+
+body.light-theme header p {
+  color: #555;
+}
+
+body.light-theme .card h2 {
+  color: var(--text-color);
+}
+
+body.light-theme .card p {
+  color: #333;
+}
+
+body.light-theme footer {
+  color: #777;
+}
+
+:root {
+  --bg-color: #0f0f0f;
+  --card-color: #1a1a1a;
+  --text-color: #ffffff;
+  --accent-color: #ff4c4c;
+  --hover-color: #ff1e1e;
+  --glow: 0 0 10px rgba(255, 76, 76, 0.7);
+}
+
+body.dark-theme {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  text-shadow: var(--glow);
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+#themeToggle {
+  background-color: transparent;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  padding: 8px 16px;
+  margin-top: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#themeToggle:hover {
+  background-color: var(--accent-color);
+  color: #0f0f0f;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: var(--card-color);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 76, 76, 0.2);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px var(--accent-color);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.card p {
+  color: #aaa;
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+}
+
+.card .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: var(--hover-color);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
